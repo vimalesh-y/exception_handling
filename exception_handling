@@ -1,0 +1,18 @@
+try:
+    numerator = int(input("Enter a number to divide: "))
+    denominator = int(input("Enter a number to divide by: "))
+    result = numerator / denominator
+    print(result)
+except Exception as e:
+    print(e)
+    print("Calculator cannot divide these inputs - please double-check numbers you have entered.")
+except ZeroDivisionError as e:
+    print(e)
+    print("You cannot divide by zero - try again.")
+except ValueError as e:
+    print(e)
+    print("Please only enter integers or floats.")
+else:
+    print(result)
+finally:
+    print("Enter correct inputs and continue using the division calculator.")
